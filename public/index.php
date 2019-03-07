@@ -19,7 +19,7 @@ namespace think;
  *  FALSE 取消默认安装【需要自行安装，详情阅读 必读——博客源码说明.md】
  */
 //------------------------------项目正式上线后 请删除以下自动安装数据库的相关代码
-/*
+
 define('INSTALL_SQL', TRUE);
 if (INSTALL_SQL) {
     $lock_file = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'extend' . DIRECTORY_SEPARATOR . 'installsql.lock';
@@ -27,7 +27,7 @@ if (INSTALL_SQL) {
         header('./installsql.php');
         exit;
     }
-}*/
+}
 //------------------------------项目正式上线后 请删除以上自动安装数据库的相关代码
 // 加载基础文件
 require __DIR__ . '/../thinkphp/base.php';

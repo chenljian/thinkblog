@@ -8,7 +8,7 @@
                 <!--<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">友链1</a></li>-->
             </ul>
             <p class="banquan">
-                笔记！
+                chenhuizhi.
             </p>
         </div>
         <div class="left">
@@ -19,8 +19,6 @@
     <!--about-->
     <div class="bottom">
         <a href="javascript:;" target="_blank">Copyright &copy; <?php echo date('Y'); ?></a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow"><?php echo WEB_ICP; ?></a>
         &nbsp;&nbsp;&nbsp;
         <a href="http://www.thinkphp.cn/" target="_blank" rel="nofollow">基于 Thinkphp<?php echo think\App::VERSION; ?></a>
         <div class="tongji">
