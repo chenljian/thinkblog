@@ -86,6 +86,6 @@ if (!$result2) {
 mysqli_close($conn);
 if ($result2) {
     @touch($lock_file);
-    header("Location:/");
+    //header("Location:/");
     return TRUE;
 }

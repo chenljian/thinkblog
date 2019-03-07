@@ -25,7 +25,7 @@ if (INSTALL_SQL) {
     $lock_file = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'extend' . DIRECTORY_SEPARATOR . 'installsql.lock';
     if (!file_exists($lock_file)) {
         header('./installsql.php');
-        exit;
+        exit($lock_file);
     }
 }
 //------------------------------项目正式上线后 请删除以上自动安装数据库的相关代码

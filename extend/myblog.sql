@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `article`(
   `c_time`  timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP ,
   PRIMARY KEY (`id`),
   KEY `index_title` (`title`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB default charset=utf8;
 
 CREATE TABLE IF NOT EXISTS `background` (
   `id` int(1) unsigned NOT NULL DEFAULT '1',
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `background` (
   `is_head` tinyint(3) unsigned NOT NULL DEFAULT '1',
   `is_main` tinyint(3) unsigned NOT NULL DEFAULT '1',
   `c_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB;
+) ENGINE=InnoDB default charset=utf8;
 
 CREATE TABLE IF NOT EXISTS `category` (
   `id` int(5) unsigned NOT NULL AUTO_INCREMENT,
@@ -27,4 +27,4 @@ CREATE TABLE IF NOT EXISTS `category` (
   `status` tinyint(3) unsigned NOT NULL DEFAULT '1',
   `c_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB default charset=utf8;
